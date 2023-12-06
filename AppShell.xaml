@@ -4,9 +4,9 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:AG_appApuntes.Views"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Flyout">
 
-    <TabBar>
+    <FlyoutItem>
         <ShellContent
             Title="Notas"
             ContentTemplate="{DataTemplate views:AG_AllNotesPage}"
@@ -16,5 +16,5 @@
             Title="Acerca de"
             ContentTemplate="{DataTemplate views:AG_AboutPage}"
             Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
-    </TabBar>
+    </FlyoutItem>
 </Shell>
